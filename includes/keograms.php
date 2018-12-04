@@ -5,7 +5,7 @@ function ListKeograms(){
 	$chosen_day = $_GET['day'];
 
 	$keograms = array();
-	foreach (glob("/home/pi/allsky/images/$chosen_day/keogram/keogram-$chosen_day.jpg") as $keogram) {
+	foreach (glob("/opt/allsky/images/$chosen_day/keogram/keogram-$chosen_day.jpg") as $keogram) {
 	  $keograms[] = $keogram;
 	}
 

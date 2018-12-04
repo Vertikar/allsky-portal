@@ -14,10 +14,10 @@ $days = array();
 if (isset($_POST['delete_directory'])) {
 	$dir = $_POST['delete_directory'];
   echo '<div class="alert alert-warning">Deleted directory '.$dir.'</div>';
-  delete_directory('/home/pi/allsky/images/'.$dir);
+  delete_directory('/opt/allsky/images/'.$dir);
 }
 
-if ($handle = opendir('/home/pi/allsky/images/')) {
+if ($handle = opendir('/opt/allsky/images/')) {
     $blacklist = array('.', '..', 'somedir', 'somefile.php');
     while (false !== ($day = readdir($handle))) {
         if (!in_array($day, $blacklist)) {

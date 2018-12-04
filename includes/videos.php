@@ -5,7 +5,7 @@ function ListVideos(){
 	$chosen_day = $_GET['day'];
 
 	$videos = array();
-	foreach (glob("/home/pi/allsky/images/$chosen_day/*.mp4") as $video) {
+	foreach (glob("/opt/allsky/images/$chosen_day/*.mp4") as $video) {
 	  $videos[] = $video;
 	}
 

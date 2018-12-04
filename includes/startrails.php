@@ -5,7 +5,7 @@ function ListStartrails(){
 	$chosen_day = $_GET['day'];
 
 	$startrails = array();
-	foreach (glob("/home/pi/allsky/images/$chosen_day/startrails/startrails-$chosen_day.jpg") as $startrail) {
+	foreach (glob("/opt/allsky/images/$chosen_day/startrails/startrails-$chosen_day.jpg") as $startrail) {
 	  $startrails[] = $startrail;
 	}
 
